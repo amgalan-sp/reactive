@@ -8,5 +8,6 @@ eureka:
   instance:
     preferIpAddress: true
 
-- port
-- book-service.url
+server:
+  port: 8082
+
