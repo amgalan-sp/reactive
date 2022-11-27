@@ -13,6 +13,6 @@ import java.util.List;
         configuration = FeignConfig.class
 )
 public interface BookServiceConnector {
-    @GetMapping("/getAllBooks")
-    List<Book> getAllBooks();
+    @GetMapping("/show")
+    List<Book> getAllBooksList();
 }

@@ -1,6 +1,13 @@
 spring:
   application:
     name: client-service
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+server:
+  port: 8082
 eureka:
   client:
     serviceUrl:
@@ -8,6 +15,5 @@ eureka:
   instance:
     preferIpAddress: true
 
-server:
-  port: 8082
+
 
